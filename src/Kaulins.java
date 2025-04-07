@@ -14,11 +14,14 @@ static void mestKaulinu(int reizes) {
 	}
 }
 	public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
+int reizes;
+do {
 	
 
-Scanner scan = new Scanner(System.in);
 System.out.println("Cik reizes mest kauliņu");
-	int reizes = scan.nextInt();
+	reizes = scan.nextInt();
+	}while(reizes < 1);
 	scan.close();
 mestKaulinu(reizes);
 	}
